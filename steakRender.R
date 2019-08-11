@@ -1,10 +1,10 @@
-R code for the render function
+# R code for the render function
 
 rmarkdown::render("steakArticleParams.Rmd",
                   params = list(region = "Mountain"))
 
 
-R code to create the custom function
+# R code to create the custom function
 
 
 render_report <-function(regionvar){
@@ -20,7 +20,7 @@ render_report <-function(regionvar){
 render_report("Pacific")
 
 
-R code to use the custom function with purrr
+# R code to use the custom function with purrr
 
 
 library(purrr)
